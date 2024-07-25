@@ -9,21 +9,21 @@ This project demonstrates the implementation of multiple linear regression using
 
 The multiple linear regression model is represented as:
 
-$$ y = \weight_0 + \weight_1 x_1 + \weight_2 x_2 + \ldots + \weight_n x_n $$
+$$ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n $$
 
 ### Normal Equation
 
-$$ y = \weights X $$
+$$ y = \beta X $$
 
 The regression coefficients are computed using the normal equation:
 
-$$ \weights = (X^T X)^{-1} X^T y $$
+$$ \beta = (X^T X)^{-1} X^T y $$
 
 ### Cost Function
 
 The cost function used to evaluate the model is the mean squared error:
 
-$$ J(\weights) = \frac{1}{2m} \sum_{i=1}^m (X \beta - y)^2 $$
+$$ J(\beta) = \frac{1}{2m} \sum_{i=1}^m (X \beta - y)^2 $$
 
 ## Method Followed
 
