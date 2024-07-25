@@ -15,6 +15,7 @@ $$ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n $$
 
 $$ y = \beta X $$
 
+Multiplying X^T on both sides and moving the term to the denominator of y calculates the wieghts. 
 The regression coefficients are computed using the normal equation:
 
 $$ \beta = (X^T X)^{-1} X^T y $$
@@ -42,8 +43,13 @@ $$ J(\beta) = \frac{1}{2m} \sum_{i=1}^m (X \beta - y)^2 $$
    - The cost function is computed to evaluate the model's performance.
 
 ## Usage
-
-1. Clone the repository:
+To Clone the repository:
    ```bash
-   git clone https://github.com/your-username/linear_regression_project.git
+   git clone https://github.com/arshia-pelathur/Student_Performance.git
 
+## Dependencies
+- Pandas
+- Numpy
+
+## References
+https://www.coursera.org/learn/machine-learning/ungradedLab/7GEJh/optional-lab-multiple-linear-regression
