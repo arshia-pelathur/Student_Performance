@@ -9,7 +9,7 @@ This project demonstrates the implementation of multiple linear regression using
 
 The multiple linear regression model is represented as:
 
-\[ y = \weight_0 + \weight_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n \]
+\[ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n \]
 
 ### Normal Equation
 
