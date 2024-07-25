@@ -41,15 +41,16 @@ $$ J(\beta) = \frac{1}{2m} \sum_{i=1}^m (X \beta - y)^2 $$
 
 4. **Evaluating the Model**:
    - The cost function is computed to evaluate the model's performance.
-
-## Usage
-To Clone the repository:
-   ```bash
-   git clone https://github.com/arshia-pelathur/Student_Performance.git
-
 ## Dependencies
 - Pandas
 - Numpy
 
 ## References
 https://www.coursera.org/learn/machine-learning/ungradedLab/7GEJh/optional-lab-multiple-linear-regression
+
+## Usage
+To Clone the repository:
+   ```bash
+   git clone https://github.com/arshia-pelathur/Student_Performance.git
+
+
