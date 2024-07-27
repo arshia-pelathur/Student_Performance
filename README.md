@@ -30,6 +30,7 @@ $$ J(\beta) = \frac{1}{2m} \sum_{i=1}^m (X \beta - y)^2 $$
 The gradient descent algorithm updates the weights to minimize the cost function:
 
 $$ w := w - \alpha \frac{\partial J(w, b)}{\partial w} $$
+
 $$ b := b - \alpha \frac{\partial J(w, b)}{\partial b} $$
 
 Where:
