@@ -34,7 +34,7 @@ $$ w := w - \alpha \frac{\partial J(w, b)}{\partial w} $$
 $$ b := b - \alpha \frac{\partial J(w, b)}{\partial b} $$
 
 Where:
-- <span style="font-family: 'Times New Roman', Times, serif;"> \alpha </span> is the learning rate
+- `\( \alpha \)` is the learning rate
 - <span style="font-family: 'Times New Roman', Times, serif;">\( \frac{\partial J(w, b)}{\partial w} \)</span> and <span style="font-family: 'Times New Roman', Times, serif;">\( \frac{\partial J(w, b)}{\partial b} \)</span> are the gradients of the cost function with respect to the weights and bias.
 
 ## Method Followed
