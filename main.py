@@ -3,6 +3,8 @@ import pandas as pd
 from data_load import load_preprocess
 from model import MultipleLinearRegression
 from cost_functions import compute_cost
+from computing import gradient, cost_function
+from algorithm import gradient_descent
 
 def main():
     X, y = load_preprocess('Student_Performance.csv')
@@ -19,8 +21,19 @@ def main():
     print('\nCost Function of above Equation: ',f'{cost:.4f}')
 
     comparison = pd.DataFrame({'Actual': y, 'Predicted': predictions})
-    print(comparison.head())
-    
+    print(comparison.head(),end='\n\n')
+
+    print('Using Gradient Descent:')
+
+    w_initial = np.zeros(X.shape[1]-1)        # subtracting 1 as weight matrix doesnt have any weights for the value of b which is all ones in the last columns.
+    b_initial = 0
+    iterations = 1000
+    alpha = 0.01
+    w_final, b_final, J_Hist = gradient_descent(X, y, w_initial, b_initial, cost_function, gradient, alpha, iterations)
+    print(f"\n(Final w, Final b) found by gradient descent: ({w_final},{b_final:.4f})")
+
+    # print('Predictions : ')
+
 if __name__ == '__main__':
     print('\n___________________________MULTIPLE LINEAR REGRESSION__________________________\n')
     main()

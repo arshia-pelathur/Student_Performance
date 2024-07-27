@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import StandardScaler
 
 def load_preprocess(filepath):
     data = pd.read_csv(filepath)
@@ -18,6 +19,9 @@ def load_preprocess(filepath):
         data['Sleep Hours'].values,
         data['Sample Question Papers Practiced'].values
     ]).T
+    # Normalize features
+    scaler = StandardScaler()
+    X = scaler.fit_transform(X)
 
     # Target feature
     y = np.array(data['Performance Index'])
