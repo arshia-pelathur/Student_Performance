@@ -5,6 +5,7 @@ from model import MultipleLinearRegression
 from cost_functions import compute_cost
 from computing import gradient, cost_function
 from algorithm import gradient_descent
+from visualize import scatter
 
 def main():
     X, y = load_preprocess('Student_Performance.csv')
@@ -31,8 +32,10 @@ def main():
     alpha = 0.01
     w_final, b_final, J_Hist = gradient_descent(X, y, w_initial, b_initial, cost_function, gradient, alpha, iterations)
     print(f"\n(Final w, Final b) found by gradient descent: ({w_final},{b_final:.4f})")
+    
+    features = ['Hours Studied','Previous Scores','Extracurricular Activities','Sleep Hours','Sample Question Papers Practiced']
+    scatter(X,y,features)
 
-    # print('Predictions : ')
 
 if __name__ == '__main__':
     print('\n___________________________MULTIPLE LINEAR REGRESSION__________________________\n')
