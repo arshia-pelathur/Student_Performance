@@ -53,6 +53,16 @@ $$ b = b - \alpha \frac{\partial J(w, b)}{\partial b} $$
 5. **Gradient Descent**:
    - Gradient descent is implemented to iteratively update the weights and bias to minimize the cost function.
 
+6. **Plotting the Cost Function**:
+   - To visualize the effectiveness of the gradient descent algorithm, I plotted the cost function (Mean Squared Error) against the number of iterations. This plot demonstrates how the cost function decreases as the algorithm converges towards the optimal regression coefficients.
+
+Here's the plot of the cost function for every iteration of gradient descent:
+![Cost Function Plot](cost_function_gradient_descent.png)
+
+
+This plot helps in understanding the convergence behavior of the gradient descent algorithm, allowing us to see how quickly the algorithm reaches a minimum. By monitoring the cost function's value at each iteration, you can ensure that the model is learning as expected and adjust the learning rate if necessary.
+
+
 ## Dependencies
 - Pandas
 - Numpy
